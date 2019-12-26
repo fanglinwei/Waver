@@ -9,7 +9,9 @@ A Siri like wave effect
 
 ## Effect
 
-![素材](./Design/素材.gif)
+<p align="center">
+  <img src="./Design/素材.gif" />
+</p>
 
 
 ## Usage
