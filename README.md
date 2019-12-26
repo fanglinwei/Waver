@@ -21,7 +21,7 @@ Copy the Waver folder to your project
 
 ```swift
 
-				waver.set { [weak self]() -> Float in
+        waver.set { [weak self]() -> Float in
             guard let self = self, let recorder = self.recorder else { return 0 }
             recorder.updateMeters()
             return pow(10, recorder.averagePower(forChannel: 0) / 40)
