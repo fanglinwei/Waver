@@ -9,8 +9,7 @@ A Siri like wave effect
 
 ## Effect
 
-![素材](/Users/calm/Documents/个人/Github/Waver/Design/素材.gif)
-
+![素材](./Design/素材.gif)
 
 
 ## Usage
