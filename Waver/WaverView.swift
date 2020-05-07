@@ -21,7 +21,7 @@ class WaverView: UIView {
     /// 辅助波纹 宽度
     @IBInspectable var decorativeWavesWidth: CGFloat = 1.0
     
-    private(set) var waves: [CAShapeLayer] = []
+    private var waves: [CAShapeLayer] = []
     
     private var idleAmplitude: CGFloat = 0.01
     
@@ -35,7 +35,7 @@ class WaverView: UIView {
     
     private var phase: CGFloat = 0
     
-    private lazy var displayLink = CADisplayLink(target: self, selector: #selector(displayLinkAction))
+    private var displayLink: CADisplayLink?
     
     private var callback: Callback?
     
@@ -56,7 +56,7 @@ class WaverView: UIView {
     }
     
     deinit {
-        displayLink.invalidate()
+        displayLink?.invalidate()
     }
 }
 
@@ -76,11 +76,12 @@ extension WaverView {
 extension WaverView {
     
     func start() {
-        displayLink.add(to: .current, forMode: .common)
+        displayLink = CADisplayLink(target: WeakObject(self), selector: #selector(displayLinkAction))
+        displayLink?.add(to: .current, forMode: .common)
     }
     
     func stop() {
-        displayLink.invalidate()
+        displayLink?.invalidate()
     }
     
     func set(waverLevel callback:  @escaping Callback) {

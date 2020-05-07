@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28341E71246416F6001B7901 /* WeakObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28341E70246416F6001B7901 /* WeakObject.swift */; };
 		287A03EF23B343EC007F42E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287A03EE23B343EC007F42E2 /* AppDelegate.swift */; };
 		287A03F123B343EC007F42E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287A03F023B343EC007F42E2 /* SceneDelegate.swift */; };
 		287A03F323B343EC007F42E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287A03F223B343EC007F42E2 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28341E70246416F6001B7901 /* WeakObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakObject.swift; sourceTree = "<group>"; };
 		287A03EB23B343EC007F42E2 /* Waver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Waver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		287A03EE23B343EC007F42E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		287A03F023B343EC007F42E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 		287A03ED23B343EC007F42E2 /* Waver */ = {
 			isa = PBXGroup;
 			children = (
+				28341E70246416F6001B7901 /* WeakObject.swift */,
 				287A040223B343FF007F42E2 /* WaverView.swift */,
 				287A03EE23B343EC007F42E2 /* AppDelegate.swift */,
 				287A03F023B343EC007F42E2 /* SceneDelegate.swift */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				287A03F323B343EC007F42E2 /* ViewController.swift in Sources */,
+				28341E71246416F6001B7901 /* WeakObject.swift in Sources */,
 				287A03EF23B343EC007F42E2 /* AppDelegate.swift in Sources */,
 				287A040323B343FF007F42E2 /* WaverView.swift in Sources */,
 				287A03F123B343EC007F42E2 /* SceneDelegate.swift in Sources */,
